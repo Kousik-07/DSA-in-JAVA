@@ -1,0 +1,12 @@
+public class studentObject{
+    public static void main(String arr[]){
+        System.out.println("Student details: ");
+        String name, rollNumber, city;
+        student s1=new student();
+        s1.name = "Kousik jana";
+        s1.rollNumber = "34600123B";
+        s1.city = "Kolkata";
+        System.out.println("Student name is "+ s1.name);
+        System.out.println("Student roll number is "+s1.rollNumber);
+    }
+}
