@@ -10,20 +10,33 @@ public class sortedCheck{
             arr[i]=input.nextInt();
         }
 
-        int issort=checksorted(arr);
-        if(issort==1){
+        boolean issort=checksorted(arr);
+        if(issort){
             System.out.print("This array is sorted");
         }else
             System.out.print("This array is not sorted");
     }
 
-    public static int checksorted(int arr[]){
-        int isSort=0;
+//    public static int checksorted(int arr[]){
+//        int isSort=0;
+//        for(int i=0; i<arr.length-1; i++){
+//            if(arr[i]<arr[i+1]){
+//                isSort=1;
+//            }else {
+//                isSort=0;
+//                return isSort;
+//            }
+//        }
+//        return isSort;
+//    }
+
+    public static boolean checksorted(int arr[]){ //when we want to return boolean value then return type also mention in boolean
+        boolean isSort=false; //we can use boolean
         for(int i=0; i<arr.length-1; i++){
             if(arr[i]<arr[i+1]){
-                isSort=1;
-            }else {
-                isSort=0;
+                isSort=true;
+            }else{
+                isSort=false;
                 return isSort;
             }
         }
