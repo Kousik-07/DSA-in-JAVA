@@ -31,13 +31,10 @@ public class sortedCheck{
 //    }
 
     public static boolean checksorted(int arr[]){ //when we want to return boolean value then return type also mention in boolean
-        boolean isSort=false; //we can use boolean
+        boolean isSort=true; //we can use boolean
         for(int i=0; i<arr.length-1; i++){
-            if(arr[i]<arr[i+1]){
-                isSort=true;
-            }else{
-                isSort=false;
-                return isSort;
+            if(arr[i]>arr[i+1]){
+                isSort=false; //this is optimice code
             }
         }
         return isSort;
