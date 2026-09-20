@@ -1,5 +1,6 @@
 package array_50_questions;
 import java.util.Scanner;
+import java.util.Arrays;
 public class alterPositions{
     public static void main(String arg[]){
         System.out.println("Enter array size: ");
@@ -10,12 +11,17 @@ public class alterPositions{
         for(int i=0; i<size; i++){
             arr[i]=input.nextInt();
         }
-        alterArrayPosition(arr);
+        arr=alterArrayPosition(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
-    public static void alterArrayPosition(int arr[]){
-        for(int i=0; i<arr.length; i++){
-            arr[i]=
+    public static int[] alterArrayPosition(int arr[]){
+        int index=0;
+        for(int i=0; i<arr.length; i+=2){
+            arr[index]=arr[i];
+            index++;
         }
+
+        return Arrays.copyOf(arr, index);
     }
 }
