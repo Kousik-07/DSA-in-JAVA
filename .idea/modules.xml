@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Search batch/Search batch.iml" filepath="$PROJECT_DIR$/Search batch/Search batch.iml" />
       <module fileurl="file://$PROJECT_DIR$/array batch/array batch.iml" filepath="$PROJECT_DIR$/array batch/array batch.iml" />
       <module fileurl="file://$PROJECT_DIR$/learning_java.iml" filepath="$PROJECT_DIR$/learning_java.iml" />
     </modules>
