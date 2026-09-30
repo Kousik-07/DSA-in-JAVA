@@ -77,6 +77,26 @@ public class insertData{
         head =temp;
     }
 
+    public void deleteAtPosition(int position){
+
+        if (position == 1) {
+            head=head.next;
+            return;
+        }
+        Node temp=head;
+        int index=1;
+        while(temp!=null){
+            if((position-1)==index){
+                temp.next=temp.next.next;
+                return;
+            }
+            index++;
+            temp=temp.next;
+        }
+    }
+
+
+
     public void printData(){
         if(head==null){
             System.out.println("LinkedList is empty");

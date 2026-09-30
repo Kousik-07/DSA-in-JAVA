@@ -5,11 +5,12 @@ public class Main{
 //        Linkedlist.insertAtBeginning(32);
         Linkedlist.insertAtlast(10);
         Linkedlist.insertAtlast(12);
-//        Linkedlist.insertAtlast(14);
-//        Linkedlist.insertAtlast(16);
-//        Linkedlist.insertAtlast(25);
-//        Linkedlist.insertAtlast(45);
-        Linkedlist.deleteAtFirst();
+        Linkedlist.insertAtlast(14);
+        Linkedlist.insertAtlast(16);
+        Linkedlist.insertAtlast(25);
+        Linkedlist.insertAtlast(45);
+        Linkedlist.deleteAtPosition(2);
+//        Linkedlist.deleteAtFirst();
 //        Linkedlist.deleteAtFirst();
 //        Linkedlist.deleteAtLast();
 //        Linkedlist.insertAtPosition(30,2);
