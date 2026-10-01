@@ -33,4 +33,5 @@ public class secondSmall{
 
         return (secSmall == Integer.MAX_VALUE) ? -1 : secSmall;
     }
+
 }
